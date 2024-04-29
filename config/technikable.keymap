@@ -51,7 +51,7 @@
 &trans  &sk LEFT_CONTROL  &kp N7  &kp N8  &kp N9  &kp N0             &kp QUESTION   &kp FSLH        &kp BSLH         &kp PIPE          &kp GRAVE      &trans
 &trans  &sk LALT          &kp N4  &kp N5  &kp N6  &kp COMMA          &kp HOME       &kp PG_DN       &kp PG_UP        &kp END           &kp SEMICOLON  &trans
 &trans  &sk LGUI          &kp N1  &kp N2  &kp N3  &kp DOT            &kp LESS_THAN  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp SLASH      &trans
-                          &trans  &trans  &trans  &trans     &trans  &trans         &trans          &trans
+                          &trans  &trans  &trans  &trans             &trans         &trans          &trans          &trans
             >;
         };
 
@@ -68,10 +68,10 @@
         setup_layer {
             label = "Set";
             bindings = <
-&bootloader  &none  &none         &none         &bt BT_CLR    &none         &none  &F9    &F10   &F11  &F12  &kp K_MUTE
-&none        &none  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none         &none  &F5    &F6    &F7   &F8   &kp K_VOLUME_UP
-&none        &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none         &none  &F1    &F2    &F3   &F4   &kp K_VOLUME_DOWN
-                    &none         &none         &none         &none  &none  &none  &none  &none
+&bootloader  &none  &none         &none         &bt BT_CLR    &none         &none  &F9    &F10   &F11   &F12  &kp K_MUTE
+&none        &none  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none         &none  &F5    &F6    &F7    &F8   &kp K_VOLUME_UP
+&none        &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none         &none  &F1    &F2    &F3    &F4   &kp K_VOLUME_DOWN
+                    &none         &none         &none         &none         &none  &none  &none  &trans
             >;
         };
     };
